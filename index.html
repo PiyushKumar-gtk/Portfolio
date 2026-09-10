@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piyush Kumar | B.Tech 1st Year Portfolio</title>
+  <meta name="description" content="Personal Portfolio of Piyush Kumar - B.Tech First Year Student, C Programmer, Fast Learner & Tech Enthusiast." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Animated Gradient Orbs -->
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+  <div class="bg-glow-orb orb-3"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Piyush<span class="highlight">.dev</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-sun light-icon"></i>
+          <i class="fa-solid fa-moon dark-icon"></i>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Connect</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (HOME / WHOM SECTION) -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            <span>B.Tech 1st Year Engineering Student</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <span class="gradient-text">Piyush Kumar</span>
+          </h1>
+
+          <div class="typed-wrapper">
+            <span class="typed-prefix">I am into </span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Welcome to my portfolio! I am an ambitious first-year engineering student building strong foundations in 
+            <strong>C Programming</strong>, <strong>Computer Fundamentals</strong>, and <strong>Git & GitHub</strong>. 
+            Passionate about problem-solving, collaborative engineering, and continuous learning.
+          </p>
+
+          <!-- Clickable buttons to jump to other sections -->
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">
+              <i class="fa-solid fa-id-card"></i> About Me
+            </a>
+            <a href="#skills" class="btn btn-secondary">
+              <i class="fa-solid fa-layer-group"></i> My Skills
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fa-solid fa-folder-open"></i> Projects
+            </a>
+            <a href="#contact" class="btn btn-accent">
+              <i class="fa-solid fa-comment-dots"></i> Get In Touch
+            </a>
+          </div>
+
+          <!-- Quick Stats / Badges -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">1st</span>
+              <span class="stat-label">Year B.Tech</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">C</span>
+              <span class="stat-label">Core Language</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Enthusiasm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Card / Terminal Illustration -->
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-header">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+              <span class="terminal-title">piyush@btech-terminal:~</span>
+            </div>
+            <div class="avatar-body">
+              <div class="code-editor">
+                <p><span class="code-keyword">#include</span> <span class="code-string">&lt;stdio.h&gt;</span></p>
+                <p><span class="code-type">int</span> <span class="code-fn">main</span>() {</p>
+                <p class="indent-1"><span class="code-type">char</span> student[] = <span class="code-string">"Piyush Kumar"</span>;</p>
+                <p class="indent-1"><span class="code-type">char</span> degree[] = <span class="code-string">"B.Tech 1st Year"</span>;</p>
+                <p class="indent-1"><span class="code-fn">printf</span>(<span class="code-string">"Hello World!\n"</span>);</p>
+                <p class="indent-1"><span class="code-fn">printf</span>(<span class="code-string">"Ready to build &amp; innovate!\n"</span>);</p>
+                <p class="indent-1"><span class="code-keyword">return</span> <span class="code-num">0</span>;</p>
+                <p>}</p>
+              </div>
+            </div>
+            <!-- Floating Skill Chips -->
+            <div class="floating-chip chip-1">
+              <i class="fa-solid fa-code"></i> C Language
+            </div>
+            <div class="floating-chip chip-2">
+              <i class="fa-brands fa-git-alt"></i> Git &amp; GitHub
+            </div>
+            <div class="floating-chip chip-3">
+              <i class="fa-solid fa-microchip"></i> Fundamentals
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Navigation Grid Cards -->
+      <div class="container quick-nav-container">
+        <h3 class="quick-nav-title">Quick Jump to Sections</h3>
+        <div class="quick-nav-grid">
+          <a href="#about" class="quick-nav-card">
+            <div class="quick-icon"><i class="fa-solid fa-address-card"></i></div>
+            <div class="quick-info">
+              <h4>About Me</h4>
+              <p>Education, Location, Achievements &amp; Hobbies</p>
+            </div>
+            <i class="fa-solid fa-arrow-right-long quick-arrow"></i>
+          </a>
+
+          <a href="#skills" class="quick-nav-card">
+            <div class="quick-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <div class="quick-info">
+              <h4>Skills &amp; Powers</h4>
+              <p>C, Fundamentals, Soft Skills &amp; Teamwork</p>
+            </div>
+            <i class="fa-solid fa-arrow-right-long quick-arrow"></i>
+          </a>
+
+          <a href="#projects" class="quick-nav-card">
+            <div class="quick-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <div class="quick-info">
+              <h4>Projects &amp; Work</h4>
+              <p>Console programs, Mini tools &amp; Repos</p>
+            </div>
+            <i class="fa-solid fa-arrow-right-long quick-arrow"></i>
+          </a>
+
+          <a href="#contact" class="quick-nav-card">
+            <div class="quick-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+            <div class="quick-info">
+              <h4>Contact &amp; Connect</h4>
+              <p>Send a message directly to Piyush</p>
+            </div>
+            <i class="fa-solid fa-arrow-right-long quick-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user"></i> Know More</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">
+            Get an insight into my academic journey, background, accomplishments, and what fuels my curiosity.
+          </p>
+        </div>
+
+        <!-- Bio Introduction Paragraph -->
+        <div class="about-intro-box glass-card">
+          <div class="intro-badge"><i class="fa-solid fa-quote-left"></i> Personal Introduction</div>
+          <p class="intro-paragraph">
+            Hi! I am <strong>Piyush Kumar</strong>, a dedicated <strong>B.Tech First Year</strong> student. 
+            I recently embarked on my engineering journey with strong enthusiasm for computer science, system architectures, 
+            and programming. I believe in learning by doing—starting with core foundational concepts, writing structured code, 
+            and understanding what happens under the hood. Beyond technical skills, I thrive in collaborative team environments, 
+            enjoy presenting ideas, and possess disciplined time management habits.
+          </p>
+        </div>
+
+        <!-- 4 Sub-Sections Grid: Education, Location, Achievements, Hobbies -->
+        <div class="about-grid">
+          
+          <!-- Card 1: Education -->
+          <div class="about-card glass-card">
+            <div class="card-icon-header">
+              <div class="icon-circle icon-blue">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <span class="card-label">Academics</span>
+            </div>
+            <h3 class="card-heading">Education</h3>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>Bachelor of Technology (B.Tech) - 1st Year</h4>
+                <p class="timeline-meta"><i class="fa-regular fa-calendar"></i> 2024 - 2028 (Undergraduate)</p>
+                <p class="timeline-desc">
+                  Undergoing rigorous foundational engineering coursework. Actively studying:
+                </p>
+                <ul class="mini-tags">
+                  <li>C Programming &amp; Logic</li>
+                  <li>Computer Fundamentals</li>
+                  <li>Engineering Mathematics</li>
+                  <li>Digital Electronics &amp; Logic</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>Higher Secondary Education (10+2)</h4>
+                <p class="timeline-meta"><i class="fa-solid fa-award"></i> Science (PCM Stream)</p>
+                <p class="timeline-desc">Built strong analytical, mathematical, and logical reasoning aptitude.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Location -->
+          <div class="about-card glass-card">
+            <div class="card-icon-header">
+              <div class="icon-circle icon-emerald">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <span class="card-label">Residence &amp; Campus</span>
+            </div>
+            <h3 class="card-heading">Location</h3>
+            <p class="card-desc">
+              Currently based and studying in India. Readily available for online collaborations, open-source projects, and student tech clubs.
+            </p>
+            <div class="location-visual-card">
+              <div class="location-flag">
+                <i class="fa-solid fa-earth-asia"></i>
+              </div>
+              <div class="location-details">
+                <span class="loc-country">India</span>
+                <span class="loc-status"><span class="status-indicator"></span> Available for Tech Events &amp; Meetups</span>
+              </div>
+            </div>
+            <div class="location-perks">
+              <div class="perk-pill"><i class="fa-solid fa-clock"></i> Timezone: IST (UTC+05:30)</div>
+              <div class="perk-pill"><i class="fa-solid fa-globe"></i> Remote &amp; Hybrid Friendly</div>
+            </div>
+          </div>
+
+          <!-- Card 3: Achievements -->
+          <div class="about-card glass-card">
+            <div class="card-icon-header">
+              <div class="icon-circle icon-amber">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <span class="card-label">Milestones</span>
+            </div>
+            <h3 class="card-heading">Achievements</h3>
+            <ul class="achievement-list">
+              <li class="achievement-item">
+                <div class="achieve-icon"><i class="fa-solid fa-medal"></i></div>
+                <div class="achieve-text">
+                  <strong>Academic Foundation Excellence</strong>
+                  <span>Consistently maintaining top performance in 1st year engineering practicals and theory.</span>
+                </div>
+              </li>
+              <li class="achievement-item">
+                <div class="achieve-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="achieve-text">
+                  <strong>C Programming Certification &amp; Lab Honors</strong>
+                  <span>Successfully completed comprehensive C language assessments with hands-on lab projects.</span>
+                </div>
+              </li>
+              <li class="achievement-item">
+                <div class="achieve-icon"><i class="fa-solid fa-users"></i></div>
+                <div class="achieve-text">
+                  <strong>Active Coding Club Member</strong>
+                  <span>Active participant in collegiate coding groups, problem-solving meetups, and seminars.</span>
+                </div>
+              </li>
+              <li class="achievement-item">
+                <div class="achieve-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="achieve-text">
+                  <strong>Version Control Milestone</strong>
+                  <span>Consistently tracking code, writing clean commit messages, and maintaining Git repositories.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Hobbies -->
+          <div class="about-card glass-card">
+            <div class="card-icon-header">
+              <div class="icon-circle icon-purple">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <span class="card-label">Personal Life</span>
+            </div>
+            <h3 class="card-heading">Hobbies &amp; Interests</h3>
+            <p class="card-desc">
+              Activities that inspire creative thinking, keep me energized, and broaden my horizons outside lectures:
+            </p>
+            <div class="hobbies-grid">
+              <div class="hobby-item">
+                <i class="fa-solid fa-puzzle-piece hobby-icon"></i>
+                <div class="hobby-info">
+                  <strong>Logic &amp; Puzzles</strong>
+                  <span>Solving analytical brain-teasers &amp; chess</span>
+                </div>
+              </div>
+              <div class="hobby-item">
+                <i class="fa-solid fa-book-bookmark hobby-icon"></i>
+                <div class="hobby-info">
+                  <strong>Tech Reading</strong>
+                  <span>Exploring computing history &amp; future tech</span>
+                </div>
+              </div>
+              <div class="hobby-item">
+                <i class="fa-solid fa-gamepad hobby-icon"></i>
+                <div class="hobby-info">
+                  <strong>Strategy Gaming</strong>
+                  <span>Engaging in team strategy &amp; simulations</span>
+                </div>
+              </div>
+              <div class="hobby-item">
+                <i class="fa-solid fa-microphone-lines hobby-icon"></i>
+                <div class="hobby-info">
+                  <strong>Discussions &amp; Debates</strong>
+                  <span>Participating in tech talks &amp; group ideas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-bolt"></i> Capabilities</span>
+          <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">
+            A balanced mix of strong technical programming fundamentals and indispensable interpersonal strengths.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="skills-filter-container">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="technical">Technical Skills</button>
+          <button class="filter-btn" data-filter="soft">Soft &amp; Professional Skills</button>
+        </div>
+
+        <!-- Skills Container -->
+        <div class="skills-wrapper">
+          
+          <!-- Category 1: Technical Skills -->
+          <div class="skill-category" data-category="technical">
+            <div class="category-title">
+              <i class="fa-solid fa-terminal"></i> Technical &amp; Engineering Skills
+            </div>
+            <div class="skills-grid">
+              
+              <!-- C Programming -->
+              <div class="skill-card glass-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-badge icon-c">
+                    <i class="fa-solid fa-c"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>C Programming</h4>
+                    <span class="skill-badge-level">Primary Language</span>
+                  </div>
+                </div>
+                <p class="skill-description">
+                  Writing clean, modular C code. Strong understanding of pointers, memory allocation, arrays, structs, recursion, and file handling.
+                </p>
+                <div class="skill-pills">
+                  <span>Pointers</span>
+                  <span>Structures</span>
+                  <span>File I/O</span>
+                  <span>Algorithms</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Computer Fundamentals -->
+              <div class="skill-card glass-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-badge icon-fundamentals">
+                    <i class="fa-solid fa-microchip"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Computer Fundamentals</h4>
+                    <span class="skill-badge-level">Core Foundation</span>
+                  </div>
+                </div>
+                <p class="skill-description">
+                  Solid grasp of computer architecture, operating system basics, process execution, memory hierarchy, binary/hex arithmetic, and CPU cycles.
+                </p>
+                <div class="skill-pills">
+                  <span>OS Basics</span>
+                  <span>Memory Architecture</span>
+                  <span>Binary Logic</span>
+                  <span>Data Flow</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <!-- Basic Git & GitHub -->
+              <div class="skill-card glass-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-badge icon-git">
+                    <i class="fa-brands fa-git-alt"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Basic Git &amp; GitHub</h4>
+                    <span class="skill-badge-level">Version Control</span>
+                  </div>
+                </div>
+                <p class="skill-description">
+                  Proficient in version control essentials: initializing repositories, tracking commits, branching, merging, pushing, pulling, and working with remote GitHub repos.
+                </p>
+                <div class="skill-pills">
+                  <span>Git CLI</span>
+                  <span>Branching</span>
+                  <span>Commit Hygiene</span>
+                  <span>GitHub Repos</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill" style="width: 78%;"></div>
+                </div>
+              </div>
+
+              <!-- Problem Solving & Logic Building -->
+              <div class="skill-card glass-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-badge icon-problem">
+                    <i class="fa-solid fa-brain"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Problem Solving &amp; Logic</h4>
+                    <span class="skill-badge-level">Algorithmic Aptitude</span>
+                  </div>
+                </div>
+                <p class="skill-description">
+                  Translating real-world problems into clear algorithms, flowcharts, and pseudo-code with optimal step-by-step logic.
+                </p>
+                <div class="skill-pills">
+                  <span>Flowcharts</span>
+                  <span>Pseudocode</span>
+                  <span>Loop Optimizations</span>
+                  <span>Debugging</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill" style="width: 82%;"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Soft & Professional Skills -->
+          <div class="skill-category" data-category="soft">
+            <div class="category-title">
+              <i class="fa-solid fa-handshake-angle"></i> Soft &amp; Professional Strengths
+            </div>
+            <div class="skills-grid">
+
+              <!-- A Good Learner -->
+              <div class="skill-card glass-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-badge icon-learner">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>A Good Learner</h4>
+                    <span class="skill-badge-level">Fast Adaptability</span>
+                  </div>
+                </div>
+                <p class="skill-description">
+                  High curiosity quotient and rapid absorption of complex new concepts, technologies, syntax, and development environments.
+                </p>
+                <div class="skill-pills">
+                  <span>Curious</span>
+                  <span>Adaptable</span>
+                  <span>Self-Motivated</span>
+                  <span>Growth Mindset</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <!-- Good Team Worker -->
+              <div class="skill-card glass-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-badge icon-team">
+                    <i class="fa-solid fa-people-group"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Good Team Worker</h4>
+                    <span class="skill-badge-level">Collaboration</span>
+                  </div>
+                </div>
+                <p class="skill-description">
+                  Energetic team player who listens attentively, respects diverse opinions, shares knowledge freely, and helps the group succeed.
+                </p>
+                <div class="skill-pills">
+                  <span>Cooperation</span>
+                  <span>Active Listening</span>
+                  <span>Peer Support</span>
+                  <span>Empathy</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- Time Management -->
+              <div class="skill-card glass-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-badge icon-time">
+                    <i class="fa-solid fa-stopwatch"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Time Management</h4>
+                    <span class="skill-badge-level">Productivity</span>
+                  </div>
+                </div>
+                <p class="skill-description">
+                  Skilled at scheduling study sessions, meeting lab deadlines punctually, balancing coursework with coding practice, and prioritizing tasks.
+                </p>
+                <div class="skill-pills">
+                  <span>Deadline Focused</span>
+                  <span>Prioritization</span>
+                  <span>Punctuality</span>
+                  <span>Consistency</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <!-- Presentation Skills -->
+              <div class="skill-card glass-card">
+                <div class="skill-card-top">
+                  <div class="skill-icon-badge icon-presentation">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Presentation Skills</h4>
+                    <span class="skill-badge-level">Communication</span>
+                  </div>
+                </div>
+                <p class="skill-description">
+                  Confident in explaining technical ideas, delivering class presentations, presenting seminar slide decks, and engaging an audience.
+                </p>
+                <div class="skill-pills">
+                  <span>Public Speaking</span>
+                  <span>Slide Design</span>
+                  <span>Clear Articulation</span>
+                  <span>Audience Engagement</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Practical Work</span>
+          <h2 class="section-title">Projects &amp; <span class="gradient-text">Explorations</span></h2>
+          <p class="section-subtitle">
+            Hands-on starter projects and lab initiatives demonstrating foundational coding, logic building, and version control.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: C Student Management System -->
+          <div class="project-card glass-card">
+            <div class="project-banner">
+              <div class="banner-badge"><i class="fa-solid fa-c"></i> C Project</div>
+              <div class="project-type-icon"><i class="fa-solid fa-users-gear"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Student Record Management System</h3>
+              <p class="project-description">
+                A complete console-based application written in C utilizing structures and binary file handling to create, search, update, and delete student academic records.
+              </p>
+              <div class="project-features">
+                <span><i class="fa-solid fa-check"></i> File Persistence (I/O)</span>
+                <span><i class="fa-solid fa-check"></i> Dynamic Structs</span>
+                <span><i class="fa-solid fa-check"></i> Menu-Driven CLI</span>
+              </div>
+              <div class="project-tags">
+                <span class="tag">C Language</span>
+                <span class="tag">File Handling</span>
+                <span class="tag">Algorithms</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#contact" class="btn-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 2: Terminal Games & Utility Suite -->
+          <div class="project-card glass-card">
+            <div class="project-banner banner-2">
+              <div class="banner-badge"><i class="fa-solid fa-gamepad"></i> Mini Games</div>
+              <div class="project-type-icon"><i class="fa-solid fa-terminal"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Interactive C Terminal Games Suite</h3>
+              <p class="project-description">
+                A collection of logic-driven terminal games including Tic-Tac-Toe with computer AI logic, a binary search Number Guessing Game, and a modular calculator.
+              </p>
+              <div class="project-features">
+                <span><i class="fa-solid fa-check"></i> 2D Arrays &amp; Loops</span>
+                <span><i class="fa-solid fa-check"></i> Decision Algorithms</span>
+                <span><i class="fa-solid fa-check"></i> Clean User Prompts</span>
+              </div>
+              <div class="project-tags">
+                <span class="tag">C Programming</span>
+                <span class="tag">Math &amp; Logic</span>
+                <span class="tag">CLI Design</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#contact" class="btn-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 3: Personal Developer Portfolio -->
+          <div class="project-card glass-card">
+            <div class="project-banner banner-3">
+              <div class="banner-badge"><i class="fa-solid fa-globe"></i> Web Portfolio</div>
+              <div class="project-type-icon"><i class="fa-solid fa-code"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Modern Developer Portfolio Website</h3>
+              <p class="project-description">
+                Designed and built a responsive portfolio from scratch featuring dark/light themes, interactive section jump navigation, dynamic typewriter animations, and working contact modal.
+              </p>
+              <div class="project-features">
+                <span><i class="fa-solid fa-check"></i> Responsive Mobile Layout</span>
+                <span><i class="fa-solid fa-check"></i> Interactive Theme Switch</span>
+                <span><i class="fa-solid fa-check"></i> Form Validation</span>
+              </div>
+              <div class="project-tags">
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">UI/UX</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#home" class="btn-link">Current Website <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Project 4: Git & GitHub Notes Repository -->
+          <div class="project-card glass-card">
+            <div class="project-banner banner-4">
+              <div class="banner-badge"><i class="fa-brands fa-github"></i> Git Showcase</div>
+              <div class="project-type-icon"><i class="fa-brands fa-git-alt"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">1st Year C &amp; Fundamentals Lab Repo</h3>
+              <p class="project-description">
+                A structured GitHub repository documenting laboratory solutions, algorithmic dry-runs, and Git workflow cheat sheets maintained with professional commit hygiene.
+              </p>
+              <div class="project-features">
+                <span><i class="fa-solid fa-check"></i> Git Branching &amp; Merges</span>
+                <span><i class="fa-solid fa-check"></i> Markdown Documentation</span>
+                <span><i class="fa-solid fa-check"></i> Lab Code Catalog</span>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Git &amp; GitHub</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">Open Source</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#contact" class="btn-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (ANYONE CAN SEND MESSAGE) -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Reach Out</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">
+            Have an idea, project collaboration, mentoring opportunity, or just want to say hi? Send me a message directly below!
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          
+          <!-- Contact Details / Info Cards -->
+          <div class="contact-info">
+            <div class="contact-card glass-card">
+              <h3>Let's talk tech &amp; opportunities!</h3>
+              <p>
+                I am actively seeking mentorship, peer collaborations, and opportunities to apply my programming skills. 
+                Feel free to contact me through the message form or any of my channels.
+              </p>
+
+              <div class="contact-methods">
+                <div class="contact-method-item">
+                  <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="method-details">
+                    <span class="method-label">Direct Email</span>
+                    <a href="mailto:piyush.kumar@example.com" class="method-value">piyush.kumar@example.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-method-item">
+                  <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="method-details">
+                    <span class="method-label">Location</span>
+                    <span class="method-value">India (Available for Remote/Campus)</span>
+                  </div>
+                </div>
+
+                <div class="contact-method-item">
+                  <div class="method-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                  <div class="method-details">
+                    <span class="method-label">Status</span>
+                    <span class="method-value">B.Tech 1st Year (Open to Learning &amp; Projects)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="social-connect">
+                <span class="social-title">Follow &amp; Connect</span>
+                <div class="social-buttons">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="Twitter / X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a href="mailto:piyush.kumar@example.com" class="social-btn" title="Email Piyush">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-container glass-card">
+            <div class="form-header">
+              <i class="fa-solid fa-message"></i>
+              <h3>Send Me a Message</h3>
+            </div>
+            
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name">Your Full Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="sender-name" name="name" placeholder="e.g. John Doe" required />
+                  </div>
+                  <span class="error-text" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-email">Your Email Address <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="sender-email" name="email" placeholder="e.g. john@example.com" required />
+                  </div>
+                  <span class="error-text" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-subject">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-bookmark input-icon"></i>
+                  <input type="text" id="sender-subject" name="subject" placeholder="e.g. Project Collaboration / Question" required />
+                </div>
+                <span class="error-text" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message">Your Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="sender-message" name="message" rows="5" placeholder="Write your message here... I'd love to hear from you!" required></textarea>
+                </div>
+                <span class="error-text" id="message-error"></span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                  <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                  <span class="btn-loading"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+                </button>
+                <button type="button" id="mailto-fallback-btn" class="btn btn-outline btn-block">
+                  <i class="fa-solid fa-envelope"></i> Send via Email Client
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Message Sent Confirmation Modal -->
+  <div id="success-modal" class="modal-backdrop">
+    <div class="modal-card glass-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="modal-icon-wrapper">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="modal-title">Message Sent Successfully!</h3>
+      <p class="modal-message">
+        Thank you for reaching out, <strong id="modal-user-name">Friend</strong>! Your message has been captured. 
+        Piyush Kumar will review it and get back to you shortly.
+      </p>
+      <div class="modal-summary" id="modal-summary"></div>
+      <button class="btn btn-primary" id="modal-confirm-btn">Awesome, Got it!</button>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" title="Back to Top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Piyush Kumar</span>
+        <p>B.Tech 1st Year | C Programmer &amp; Enthusiastic Learner</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Piyush Kumar. Built with passion &amp; dedication.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
